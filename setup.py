@@ -32,11 +32,8 @@ with open(join(dirname(__file__), 'futu/VERSION.txt'), 'rb') as f:
 with open("README.md", "r", encoding='utf-8') as fh:
     long_desc = fh.read()
 
-install_requires = ["pandas",
-                    "simplejson",
-                    "protobuf>=3.8.0,==3.*",
-                    "PyCryptodome",
-                    ]
+with open("requirements.txt", "r", encoding='utf-8') as ir:
+    install_requires = ir.read().splitlines()
 
 if is_py2:
     install_requires.append("selectors2")
