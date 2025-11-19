@@ -1,6 +1,6 @@
 pandas
 simplejson
-protobuf>=5.29.0,<6.0
+protobuf>=6.33.0,<6.34.0
 PyCryptodome
 ta-lib
 
